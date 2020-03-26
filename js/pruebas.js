@@ -18,7 +18,7 @@ function probarValidarNombre() {
 
   console.assert(
       validarNombre('Paco') === '',
-      'Validar nombre no validó que el nombre no causa errores',
+      'Validar nombre falló con un nombre válido',
   );
 }
 
@@ -30,7 +30,7 @@ function probarValidarCiudad () {
 
     console.assert(
         validarCiudad('Buenos Aires') === '',
-        'Validar ciudad no validó que la ciudad no causa errores',
+        'Validar ciudad falló con una ciudad válida',
     );
 
 }
@@ -55,7 +55,7 @@ function probarValidarDescripcionRegalo () {
 
     console.assert(
         validarDescripcionRegalo('Nintendo 64') === '',
-        'Validar descripción regalo no validó que la descripción del regalo no causa errores',
+        'Validar descripción regalo falló con una descripción del regalo válida',
     )
 
 }
