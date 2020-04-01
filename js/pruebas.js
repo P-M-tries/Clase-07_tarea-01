@@ -1,24 +1,22 @@
 function probarValidarNombre() {
-  console.assert(
+    console.assert(
+        validarNombre('Paco98') === 'Este campo puede contener únicamente letras',
+        'Validar nombre no validó que el nombre contenga únicamente letras'
+    );
+    console.assert(
       validarNombre('') === 'Este campo no debe estar vacío',
-      'Validar nombre no validó que el nombre no sea vacío',
+      'Validar nombre no validó que el nombre no sea vacío'
   );
 
   console.assert(
       validarNombre(
-          '111111111111111111111111111111111111111111111111111111111111111111111111111111111111111') ===
+          'ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp') ===
       'Este campo debe tener menos de 50 caracteres',
-      'Validar nombre no validó que el nombre sea menor a 50 caracteres',
+      'Validar nombre no validó que el nombre sea menor a 50 caracteres'
   );
-
-  console.assert(
-      validarNombre('Paco98') === 'Este campo puede contener únicamente letras',
-      'Validar nombre no validó que el nombre contenga únicamente letras',
-  );
-
   console.assert(
       validarNombre('Paco') === '',
-      'Validar nombre falló con un nombre válido',
+      'Validar nombre falló con un nombre válido'
   );
 }
 
@@ -56,7 +54,7 @@ function probarValidarDescripcionRegalo () {
     console.assert(
         validarDescripcionRegalo('Nintendo 64') === '',
         'Validar descripción regalo falló con una descripción del regalo válida',
-    )
+    );
 
 }
 
